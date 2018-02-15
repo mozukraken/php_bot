@@ -23,7 +23,7 @@ $media = $connection->upload("media/upload", [
 ]);
 // ツイート
 $res = $connection->post("statuses/update", [
-  'status' => 'これは画像付きテストツイートです',
+  'status' => 'これは画像付きテストツイートですby cron',
   // 画像のidを指定
   'media_ids' => $media->media_id
 ]);
